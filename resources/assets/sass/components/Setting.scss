@@ -1,0 +1,16 @@
+.Settings {
+	padding: 10px 15px;
+}
+
+.Setting__title--container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 10px;
+}
+
+.Setting__title {
+	color: #7f8fa4;
+	font-size: 12px;
+	text-transform: uppercase;
+}

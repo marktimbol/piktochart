@@ -37,21 +37,12 @@ body {
   flex-wrap: wrap;
   -ms-flex-align: center;
   align-items: center;
+  margin-bottom: 20px;
   -ms-flex-pack: justify;
   justify-content: space-between; }
 
-.Row--one-column .Column {
-  width: 100%; }
-
-.Row--two-columns .Column {
-  width: 45%; }
-
-.Row--three-columns .Column {
-  width: 29%; }
-
 .Column {
-  margin: 5px;
-  min-height: 70px;
+  margin-bottom: 10px;
   border-radius: 3px;
   padding: 20px 10px;
   border: 1px solid #7f8fa4;
@@ -66,6 +57,24 @@ body {
   .Column:hover {
     cursor: pointer;
     background: #162237; }
+
+.Column-2 {
+  width: 14.67%; }
+
+.Column-3 {
+  width: 25%; }
+
+.Column-4 {
+  width: 30%; }
+
+.Column-6 {
+  width: 47%; }
+
+.Column-8 {
+  width: 66.66666667%; }
+
+.Column-12 {
+  width: 100%; }
 
 header {
   padding: 20px;
@@ -149,6 +158,23 @@ header {
 #productOptions div.radio {
   margin-right: 20px;
   margin-bottom: 15px; }
+
+.Settings {
+  padding: 10px 15px; }
+
+.Setting__title--container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 10px; }
+
+.Setting__title {
+  color: #7f8fa4;
+  font-size: 12px;
+  text-transform: uppercase; }
 
 .Avatar {
   position: relative; }
@@ -282,7 +308,7 @@ header {
     color: white;
     margin: 0;
     font-size: 14px;
-    margin-top: 15px; }
+    margin-top: 10px; }
 
 .control-label-container {
   display: -ms-flexbox;
