@@ -35,3 +35,14 @@
 		}
 	}
 }
+
+.control-label-container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 10px;
+	label {
+		color: white;
+		font-size: 11px;
+	}
+}

@@ -123,6 +123,18 @@ header {
 #choosePhotos .Upload__note {
   margin-top: 0; }
 
+#productOptions label {
+  color: white;
+  font-size: 12px; }
+  #productOptions label.option--title {
+    margin-bottom: 20px; }
+  #productOptions label input[type="radio"] {
+    margin-right: 7px; }
+
+#productOptions div.radio {
+  margin-right: 20px;
+  margin-bottom: 15px; }
+
 .Avatar {
   position: relative; }
   .Avatar .bubble {
@@ -255,5 +267,17 @@ header {
     color: white;
     margin: 0;
     margin-top: 15px; }
+
+.control-label-container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 10px; }
+  .control-label-container label {
+    color: white;
+    font-size: 11px; }
 
 /*# sourceMappingURL=create.css.map */
