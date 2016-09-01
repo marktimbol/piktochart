@@ -1,8 +1,15 @@
+@import 'components/Fonts';
 @import 'components/Variables';
 
 body {
+	font-family: 'ProximaRegular';
 	font-size: 13px;
 }
+
+h1, h2, h3, h4, h5, h6 {
+	// font-family: 'ProximaBold';
+}
+
 
 .Container {
 	display: flex;

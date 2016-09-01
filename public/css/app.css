@@ -6756,9 +6756,25 @@ button.close {
 }
 /*# sourceMappingURL=bootstrap.css.map */
 
+@font-face {
+  font-family: 'ProximaRegular';
+  src: url("../../../public/fonts/proximanova-regular-webfont.woff2") format("woff2"), url("../../../public/fonts/proximanova-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'ProximaBold';
+  src: url("../../../public/fonts/proximanova-bold-webfont.woff2") format("woff2"), url("../../../public/fonts/proximanova-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
 body {
   background: #2ea1f8;
+  font-family: 'ProximaRegular';
   font-size: 13px; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'ProximaBold'; }
 
 header {
   margin: 50px 0px; }
@@ -6812,7 +6828,8 @@ header {
   font-size: 36px;
   font-weight: bold;
   text-align: center;
-  letter-spacing: 1.2px; }
+  letter-spacing: 1.2px;
+  font-family: 'ProximaBold'; }
 
 .Card__content--icon {
   text-align: center;

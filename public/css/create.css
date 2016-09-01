@@ -6756,7 +6756,20 @@ button.close {
 }
 /*# sourceMappingURL=bootstrap.css.map */
 
+@font-face {
+  font-family: 'ProximaRegular';
+  src: url("../../../public/fonts/proximanova-regular-webfont.woff2") format("woff2"), url("../../../public/fonts/proximanova-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'ProximaBold';
+  src: url("../../../public/fonts/proximanova-bold-webfont.woff2") format("woff2"), url("../../../public/fonts/proximanova-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
 body {
+  font-family: 'ProximaRegular';
   font-size: 13px; }
 
 .Container {
@@ -6860,6 +6873,7 @@ header {
   background: #273142; }
 
 #choosePhotos .panel-body p {
+  color: #7f8fa4;
   font-size: 11px;
   margin-top: 10px; }
 
@@ -6867,7 +6881,7 @@ header {
   padding: 10px; }
 
 #choosePhotos .Upload__text {
-  color: white;
+  color: #7f8fa4;
   text-align: center;
   font-weight: normal; }
 
@@ -6885,6 +6899,7 @@ header {
   color: white;
   font-size: 12px; }
   #productOptions label.option--title {
+    color: #7f8fa4;
     margin-bottom: 20px; }
   #productOptions label input[type="radio"] {
     margin-right: 7px; }
@@ -7024,6 +7039,7 @@ header {
   .panel-group .panel-body p {
     color: white;
     margin: 0;
+    font-size: 14px;
     margin-top: 15px; }
 
 .control-label-container {
@@ -7035,7 +7051,7 @@ header {
   justify-content: space-between;
   margin-bottom: 10px; }
   .control-label-container label {
-    color: white;
+    color: #7f8fa4;
     font-size: 11px; }
 
 /*# sourceMappingURL=create.css.map */
