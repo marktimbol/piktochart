@@ -1,0 +1,36 @@
+.Sidebar {
+	flex: 0.2;
+	padding-top: 10px;
+	background: $editorMenu;
+}
+
+#choosePhotos {
+	.panel-body {
+		p {
+			font-size: 11px;
+			margin-top: 10px;
+		}
+	}
+
+	.Column {
+		padding: 10px;
+	}
+
+	.Upload__text {
+		color: white;
+		text-align: center;
+		font-weight: normal;
+	}
+
+	.browse-photo {
+	    font-size: 14px;
+		margin: 20px 0px;
+		background: #0072ff;
+	    letter-spacing: 1.3px;
+	    text-transform: uppercase;
+	}
+
+	.Upload__note {
+		margin-top: 0;
+	}
+}

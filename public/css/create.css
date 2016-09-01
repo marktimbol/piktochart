@@ -6757,141 +6757,149 @@ button.close {
 /*# sourceMappingURL=bootstrap.css.map */
 
 body {
-  background: #2ea1f8;
   font-size: 13px; }
 
-header {
-  margin: 50px 0px; }
-  header .Page__title {
-    color: white;
-    font-size: 14px;
-    font-weight: normal;
-    letter-spacing: 1.3px;
-    text-transform: uppercase;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-align: center;
-    align-items: center;
-    -ms-flex-pack: center;
-    justify-content: center; }
-    header .Page__title .icon {
-      margin-right: 15px; }
+.Container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
 
-.Cards {
+.Content {
+  -ms-flex: 0.55;
+  flex: 0.55;
+  height: 1000px; }
+
+.Settings {
+  -ms-flex: 0.25;
+  flex: 0.25;
+  background: #273142; }
+
+.Row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.Row--one-column .Column {
+  width: 100%; }
+
+.Row--two-columns .Column {
+  width: 45%; }
+
+.Row--three-columns .Column {
+  width: 29%; }
+
+.Column {
+  margin: 5px;
+  min-height: 70px;
+  border-radius: 3px;
+  padding: 20px 10px;
+  border: 1px solid #7f8fa4;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+  .Column:hover {
+    cursor: pointer;
+    background: #162237; }
+
+header {
+  padding: 20px;
+  background: #0072ff;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.Page__title, .Project__name {
+  margin: 0; }
+
+.Page__title {
+  color: white;
+  font-size: 14px;
+  font-weight: normal;
+  letter-spacing: 1.3px;
+  text-transform: uppercase;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;
   align-items: center;
   -ms-flex-pack: center;
   justify-content: center; }
+  .Page__title .icon {
+    margin-right: 15px; }
 
-.Card {
-  width: 441px;
-  margin: 0 25px;
-  transition: all .1s ease; }
-  .Card:hover {
-    border-radius: 5px;
-    transform: scale(1.04);
-    box-shadow: 0px 0px 50px #555; }
-    .Card:hover.Card--personal .Card__action--button {
-      background: #452c7c; }
-    .Card:hover.Card--business .Card__action--button {
-      background: #2a6450; }
+.Project__name {
+  font-size: 16px;
+  color: white;
+  font-weight: normal;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  .Project__name .icon {
+    margin-right: 10px; }
 
-.Card__image {
-  position: relative;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px; }
-  .Card__image .icon {
-    top: 15px;
-    left: 15px;
-    position: absolute; }
+.Sidebar {
+  -ms-flex: 0.2;
+  flex: 0.2;
+  padding-top: 10px;
+  background: #273142; }
 
-.Card__title {
-  margin-top: 0;
-  font-size: 36px;
-  font-weight: bold;
-  text-align: center;
-  letter-spacing: 1.2px; }
-
-.Card__content--icon {
-  text-align: center;
-  margin: 20px 0; }
-
-.Card__tags {
-  font-size: 14px;
-  font-weight: bold;
-  text-align: center;
+#choosePhotos .panel-body p {
+  font-size: 11px;
   margin-top: 10px; }
 
-.Card--personal .Card__image {
-  background: #6244a4; }
+#choosePhotos .Column {
+  padding: 10px; }
 
-.Card--personal .Card__title {
-  color: #6244a4; }
-
-.Card--personal .Card__tags {
-  color: #6244a4; }
-
-.Card--personal .Card__action--button {
-  background: #6244a4; }
-
-.Card--business .Card__image {
-  background: #498f74; }
-
-.Card--business .Card__title {
-  color: #498f74; }
-
-.Card--business .Card__tags {
-  color: #498f74; }
-
-.Card--business .Card__action--button {
-  background: #498f74; }
-
-.Card__content {
-  background: white;
-  padding: 20px 20px 30px 20px;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px; }
-
-.Card__title--category {
-  color: #999;
-  font-size: 13px;
-  margin-bottom: 0;
-  font-weight: bold;
+#choosePhotos .Upload__text {
+  color: white;
   text-align: center;
-  letter-spacing: 1.5px;
+  font-weight: normal; }
+
+#choosePhotos .browse-photo {
+  font-size: 14px;
+  margin: 20px 0px;
+  background: #0072ff;
+  letter-spacing: 1.3px;
   text-transform: uppercase; }
 
-.Card__description {
-  color: #665;
-  font-size: 14px;
-  padding: 0px 20px;
-  text-align: center; }
+#choosePhotos .Upload__note {
+  margin-top: 0; }
 
-.Card__action {
-  width: 60%;
-  margin: 0 auto;
-  margin-top: 30px; }
-
-.Card__action--button {
-  color: white;
-  display: block;
-  font-size: 14px;
-  cursor: pointer;
-  text-align: center;
-  padding: 13px 20px;
-  letter-spacing: 2px;
-  border-radius: 50px;
-  text-transform: uppercase;
-  transition: all .1s ease; }
-  .Card__action--button:hover {
+.Avatar {
+  position: relative; }
+  .Avatar .bubble {
     color: white;
-    text-decoration: none; }
-    .Card--personal .Card__action--button:hover {
-      background: #452c7c; }
-    .Card--business .Card__action--button:hover {
-      background: #2a6450; }
+    width: 15px;
+    height: 15px;
+    top: -4px;
+    right: -4px;
+    font-size: 10px;
+    position: absolute;
+    border-radius: 50%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+  .Avatar .bubble--orange {
+    background: #6244a4; }
 
 .icon {
   display: inline-block;
@@ -6977,6 +6985,35 @@ header {
   height: 26px;
   background-position: -344px -147px; }
 
-/*# sourceMappingURL=app.css.map */
+.panel-group .panel {
+  border-radius: 0;
+  background: none;
+  border: none;
+  box-shadow: none; }
 
-/*# sourceMappingURL=app.css.map */
+.panel-group .panel-heading {
+  padding: 5px 15px;
+  border-radius: 0; }
+
+.panel-group .panel-title {
+  padding-bottom: 15px;
+  border-bottom: 1px solid #313d4f; }
+  .panel-group .panel-title a {
+    color: #7f8fa4;
+    font-size: 12px;
+    text-transform: uppercase; }
+    .panel-group .panel-title a:hover, .panel-group .panel-title a:focus {
+      color: white;
+      text-decoration: none; }
+
+.panel-group .panel-body {
+  padding: 10px 15px;
+  border: 0 !important; }
+  .panel-group .panel-body p {
+    color: white;
+    margin: 0;
+    margin-top: 15px; }
+
+/*# sourceMappingURL=create.css.map */
+
+/*# sourceMappingURL=create.css.map */

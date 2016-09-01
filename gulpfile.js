@@ -24,4 +24,10 @@ elixir(function(mix) {
             bowersPath + 'bootstrap/dist/js/bootstrap.js',
             // 'app.js',
     	], 'public/js/app.js');
+
+    mix.sass('create.scss', 'resources/assets/css/create.css')
+        .styles([
+            bowersPath + 'bootstrap/dist/css/bootstrap.css',
+            'create.css',
+        ], 'public/css/create.css');
 });

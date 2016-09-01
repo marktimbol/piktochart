@@ -1,0 +1,37 @@
+.panel-group {
+	.panel {
+		border-radius: 0;
+		background: none;
+		border: none;
+		box-shadow: none;
+	}
+
+	.panel-heading {
+		padding: 5px 15px;
+		border-radius: 0;
+	}
+
+	.panel-title {
+		padding-bottom: 15px;
+		border-bottom: 1px solid #313d4f;
+		a {
+			color: #7f8fa4;
+			font-size: 12px;
+			text-transform: uppercase;
+			&:hover, &:focus {
+				color: white;
+				text-decoration: none;
+			}
+		}
+	}
+
+	.panel-body {
+		padding: 10px 15px;
+		border: 0 !important;
+		p {
+			color: white;
+		    margin: 0;
+		    margin-top: 15px;
+		}
+	}
+}

@@ -1,0 +1,29 @@
+@import 'components/Variables';
+
+body {
+	font-size: 13px;
+}
+
+.Container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.Content {
+	flex: 0.55;
+	height: 1000px;
+}
+
+.Settings {
+	flex: 0.25;
+	background: $editorMenu;
+}
+
+
+@import 'components/Grid';
+@import 'components/Header';
+@import 'components/Sidebar';
+@import 'components/Avatar';
+@import 'components/Icons';
+@import 'components/Overwrite';
+@import 'components/MediaQueries';

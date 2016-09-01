@@ -1,0 +1,43 @@
+.Row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Row--one-column {
+    .Column {
+        width: 100%;
+    }
+}
+
+.Row--two-columns {
+	.Column {
+    	width: 45%;
+    }
+}
+
+.Row--three-columns {
+    .Column {
+    	width: 29%;
+    }
+}
+
+
+.Column {
+    margin: 5px;
+	min-height: 70px;
+	border-radius: 3px;
+	padding: 20px 10px;
+	border: 1px solid #7f8fa4;
+
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    &:hover {
+        cursor: pointer;
+        background: #162237;
+    }
+}
