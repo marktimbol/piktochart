@@ -1,0 +1,144 @@
+.Cards {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.Card {
+	width: 441px;
+	margin: 0 25px;
+	transition: all .1s ease;
+	&:hover {
+		border-radius: 5px;
+		transform: scale(1.04);
+		box-shadow: 0px 0px 50px #555;
+
+		&.Card--personal {
+			.Card__action--button {
+				background: $blueBerry;
+			}
+		}
+
+		&.Card--business {
+			.Card__action--button {
+				background: $pine;
+			}	
+		}
+	}
+}
+
+.Card__image {
+	position: relative;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    .icon {
+    	top: 15px;
+    	left: 15px;
+    	position: absolute;
+    }
+}
+
+.Card__title {
+	margin-top: 0;
+	font-size: 36px;
+	font-weight: bold;
+	text-align: center;
+	letter-spacing: 1.2px;
+}
+
+.Card__content--icon {
+	text-align: center;
+	margin: 20px 0;
+}
+
+.Card__tags {
+	font-size: 14px;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 10px;
+}
+
+.Card--personal {
+	.Card__image {
+		background: $purple;
+	}
+	.Card__title {
+		color: $purple;
+	}
+	.Card__tags {
+		color: $purple;
+	}
+	.Card__action--button {
+		background: $purple;
+	}
+}
+
+.Card--business {
+	.Card__image {
+		background: $green;
+	}
+	.Card__title {
+		color: $green;
+	}
+	.Card__tags {
+		color: $green;
+	}
+	.Card__action--button {
+		background: $green;
+	}
+}
+
+.Card__content {
+    background: white;
+    padding: 20px 20px 30px 20px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.Card__title--category {
+	color: #999;
+	font-size: 13px;
+	margin-bottom: 0;
+    font-weight: bold;
+	text-align: center;
+	letter-spacing: 1.5px;
+	text-transform: uppercase;
+}
+
+.Card__description {
+	color: #665;
+	font-size: 14px;
+    padding: 0px 20px;
+	text-align: center;
+}
+
+.Card__action {
+	width: 60%;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+
+.Card__action--button {
+	color: white;
+	display: block;
+	font-size: 14px;
+	cursor: pointer;
+	text-align: center;
+	padding: 13px 20px;
+	letter-spacing: 2px;
+	border-radius: 50px;
+	text-transform: uppercase;
+	transition: all .1s ease;
+	&:hover {
+		color: white;
+		text-decoration: none;
+
+		.Card--personal & {
+			background: $blueBerry;
+		}
+
+		.Card--business & {
+			background: $pine;
+		}
+	}
+}

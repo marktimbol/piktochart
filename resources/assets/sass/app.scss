@@ -1,0 +1,30 @@
+@import 'components/Variables';
+
+body {
+	background: $dodgerBlue;
+	font-size: 13px;
+}
+
+header {
+	margin: 50px 0px;
+	.Page__title {
+	    color: white;
+	    font-size: 14px;
+	    font-weight: bold;
+	    letter-spacing: 1.3px;
+	    text-transform: uppercase;
+
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		.icon {
+			margin-right: 15px;
+		}
+	}
+}
+
+@import 'components/Card';
+@import 'components/Button';
+@import 'components/Icons';
+@import 'components/MediaQueries';
