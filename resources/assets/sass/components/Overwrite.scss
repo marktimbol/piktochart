@@ -29,22 +29,8 @@
 		padding: 10px 15px;
 		border: 0 !important;
 		p {
-			color: white;
-		    margin: 0;
-		    font-size: 14px;
-		    margin-top: 10px;
+		    // margin: 0;
 		}
-	}
-}
-
-.control-label-container {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	margin-bottom: 10px;
-	label {
-		color: #7f8fa4 !important;
-		font-size: 11px;
 	}
 }
 
@@ -53,7 +39,7 @@
     color: white;
     border: none;
     height: 100%;
-    font-size: 14px;
+    font-size: 12px;
 	background: none;
     box-shadow: none;
     border-radius: 0;
@@ -61,12 +47,23 @@
 }
 
 select.form-control {
-	color: white;
-	font-size: 14px;
-	background: $editorMenu;
-	border: 1px solid $borderColor;
+	// color: white;
+	// font-size: 14px;
+	// background: $editorMenu;
+	// border: 1px solid $borderColor;
 	&:focus {
 		box-shadow: none;
 		border: 1px solid $borderColor;
 	}
+}
+
+.Pikto__input-text {
+    color: white;
+    font-size: 14px;
+    background: #273142;
+    border: 1px solid $borderColor;
+    &:hover, &:active, &:focus {
+    	box-shadow: none;
+    	border: 1px solid $borderColor;
+    }
 }

@@ -16,22 +16,28 @@ h1, h2, h3, h4, h5, h6 {
 	justify-content: space-between;
 }
 
+.Options {
+	flex: 0.2;
+	padding-top: 10px;
+	background: $editorMenu;
+}
+
 .Content {
-	flex: 0.55;
+	flex: 0.60;
 	height: 1000px;
 }
 
 .Settings {
-	flex: 0.25;
+	flex: 0.2;
 	background: $editorMenu;
 }
 
 
-@import 'components/Grid';
 @import 'components/Header';
-@import 'components/Sidebar';
-@import 'components/Setting';
 @import 'components/Avatar';
+@import 'components/Options';
+@import 'components/Settings';
+@import 'components/Grid';
 @import 'components/Icons';
 @import 'components/Overwrite';
 @import 'components/MediaQueries';

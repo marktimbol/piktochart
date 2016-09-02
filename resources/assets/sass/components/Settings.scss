@@ -1,0 +1,60 @@
+.Settings {
+	padding: 10px 15px;
+	.Column {
+		&:active {
+			background: #162237;
+			border: 1px solid $borderColor;
+		}
+	}
+}
+
+.Setting {
+	margin-bottom: 20px;
+}
+
+.Font__settings {
+	.Column-2 {
+		width: 36px;
+	}
+	.Column {
+		height: 36px;
+		padding: 0;
+	}
+}
+
+.Setting__title--container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 10px;
+}
+
+.Setting__title {
+	color: #7f8fa4;
+	font-size: 12px;
+	text-transform: uppercase;
+}
+
+.Setting__label {
+	color: white;
+	font-size: 14px;
+	margin-bottom: 0;
+}
+
+.CoverLayout {
+	justify-content: flex-start !important;
+	.Column {
+		padding: 10px;
+		border-radius: 4px;
+		margin-right: 10px;
+		background: white;
+		border: 2px solid rgba(12, 36, 65, 0.65);
+		&:last-child {
+			padding: 3px;
+		}
+		&:hover {
+			background: white;
+			border: 2px solid #2ea1f8;
+		}
+	}
+}

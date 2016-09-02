@@ -1,0 +1,90 @@
+.Options {
+	.Column {
+		background: #293345;
+		p {
+			color: #7f8fa4;
+		}
+	}
+}
+
+.Option--product-selection {
+	.Column {
+		padding: 20px 10px;
+		p {
+			margin-top: 10px;
+			margin-bottom: 0;
+		}
+	}
+}
+
+.Option--product-options {
+	.Option__label {
+		// margin-bottom: 20px;
+	}
+	div.radio {
+		margin-right: 20px;
+		margin-bottom: 15px;
+		label {
+			color: white;
+			font-size: 11px;
+		}
+		input[type="radio"] {
+			margin-right: 7px;
+		}
+	}
+}
+
+.Option__label--container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 10px;
+}
+
+.Option__label {
+	color: #7f8fa4;
+	font-size: 12px;
+}
+
+.Option--choose-photos {
+	.Column {
+		padding: 10px;
+		p {
+			color: #7f8fa4;
+			font-size: 11px;
+			margin-top: 5px;
+			margin-bottom: 0;
+		}
+		&:active {
+			.icon-facebook {
+			    background-position: -411px -21px;
+			}
+
+			.icon-instagram {
+			    background-position: -403px -83px;
+			}
+
+			.icon-upload {
+			    background-position: -408px -147px;
+			}
+		}
+	}
+
+	.Upload__text {
+		color: #7f8fa4;
+		text-align: center;
+		font-weight: normal;
+	}
+
+	.browse-photo {
+	    font-size: 14px;
+		margin: 20px 0px;
+		background: #0072ff;
+	    letter-spacing: 1.3px;
+	    text-transform: uppercase;
+	}
+
+	.Upload__note {
+		margin-top: 0;
+	}
+}

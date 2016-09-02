@@ -11,9 +11,9 @@
   font-style: normal; }
 
 body {
-  background: #2ea1f8;
   font-family: 'ProximaRegular';
-  font-size: 13px; }
+  font-size: 13px;
+  background-image: linear-gradient(to right, #00c6ff, #0072ff); }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'ProximaBold'; }
@@ -68,10 +68,9 @@ header {
 .Card__title {
   margin-top: 0;
   font-size: 36px;
-  font-weight: bold;
+  font-weight: normal;
   text-align: center;
-  letter-spacing: 1.2px;
-  font-family: 'ProximaBold'; }
+  font-family: "Montserrat", sans-serif; }
 
 .Card__content--icon {
   text-align: center;
@@ -79,9 +78,9 @@ header {
 
 .Card__tags {
   font-size: 14px;
-  font-weight: bold;
   text-align: center;
-  margin-top: 10px; }
+  margin-top: 10px;
+  font-family: "Montserrat", sans-serif; }
 
 .Card--personal .Card__image {
   background: #6244a4; }
@@ -117,16 +116,17 @@ header {
   color: #999;
   font-size: 13px;
   margin-bottom: 0;
-  font-weight: bold;
   text-align: center;
   letter-spacing: 1.5px;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif; }
 
 .Card__description {
   color: #665;
   font-size: 14px;
   padding: 0px 20px;
-  text-align: center; }
+  text-align: center;
+  font-family: "Open Sans", sans-serif; }
 
 .Card__action {
   width: 60%;
@@ -146,7 +146,8 @@ header {
   transition: all .1s ease; }
   .Card__action--button:hover {
     color: white;
-    text-decoration: none; }
+    text-decoration: none;
+    box-shadow: 0 2px 11px 3px rgba(0, 0, 0, 0.14); }
     .Card--personal .Card__action--button:hover {
       background: #452c7c; }
     .Card--business .Card__action--button:hover {
@@ -222,14 +223,14 @@ header {
   background-position: -16px -464px; }
 
 .icon-facebook {
-  background-position: -347px -21px;
   width: 11px;
-  height: 26px; }
+  height: 26px;
+  background-position: -347px -21px; }
 
 .icon-instagram {
-  background-position: -339px -83px;
   width: 26px;
-  height: 26px; }
+  height: 26px;
+  background-position: -339px -83px; }
 
 .icon-upload {
   width: 17px;
@@ -267,28 +268,43 @@ header {
   background-position: -90px -26px; }
 
 .icon-text-left {
-  background-position: -152px -23px;
   width: 16px;
-  height: 18px; }
+  height: 18px;
+  background-position: -152px -23px; }
 
 .icon-text-center {
-  background-position: -152px -87px;
   width: 16px;
-  height: 18px; }
+  height: 18px;
+  background-position: -152px -87px; }
 
 .icon-text-right {
-  background-position: -152px -151px;
   width: 16px;
-  height: 18px; }
+  height: 18px;
+  background-position: -152px -151px; }
 
 .icon-text-justify {
-  background-position: -152px -215px;
   width: 16px;
-  height: 18px; }
+  height: 18px;
+  background-position: -152px -215px; }
 
 .icon-text-leading {
-  width: 22px;
+  width: 30px;
   height: 16px;
   background-position: -153px -281px; }
+
+.icon-layout-artboard {
+  width: 48px;
+  height: 48px;
+  background-position: -264px -8px; }
+
+.icon-layout-normal {
+  width: 45px;
+  height: 45px;
+  background-position: -266px -74px; }
+
+.icon-layout-fullscreen {
+  width: 60px;
+  height: 60px;
+  background-position: -258px -130px; }
 
 /*# sourceMappingURL=app.css.map */

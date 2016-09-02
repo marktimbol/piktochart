@@ -2,7 +2,6 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    margin-bottom: 20px;
     justify-content: space-between;
 }
 
@@ -13,10 +12,16 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    &:active {
+        p {
+            color: white !important;
+        }
+    }
 }
 
 .Column--float-left {
     flex-direction: row;
+    padding: 10px !important;
     .icon {
         margin-right: 10px;
     }
@@ -29,6 +34,10 @@
         cursor: pointer;
         background: #162237;
     }
+    &:active {
+        border: 1px solid #2ea1f8;
+        background: rgba(0, 124, 255, 0.3);
+    }
 }
 
 .Column--without-border {
@@ -36,6 +45,22 @@
     padding: 0;
     border-radius: 0;
     align-items: flex-start;
+
+    &:active {      
+        border: none !important;
+        background: none !important;
+    }
+}
+
+.Column--no-radius {
+    border-radius: 0;
+}
+
+.Column--no-active-state {
+    &:active {
+        background: #162237;
+        border: 1px solid $borderColor;  
+    }
 }
 
 .Column-2 {

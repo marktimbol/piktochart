@@ -32,9 +32,9 @@
         </header>
         
         <div class="Container">
-            <aside class="Sidebar Options">
+            <div class="Options">
                 <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-                    <div class="panel Option">
+                    <div class="panel Option Option--product-selection">
                         <div class="panel-heading" role="tab">
                             <h4 class="panel-title">
                                 <a role="button" data-toggle="collapse" data-parent="#accordion" href="#productSelection" aria-expanded="true" aria-controls="productSelection">
@@ -90,7 +90,7 @@
                         </div>
                     </div>
 
-                    <div class="panel Option">
+                    <div class="panel Option Option--product-options">
                         <div class="panel-heading" role="tab">
                             <h4 class="panel-title">
                                 <a role="button" data-toggle="collapse" data-parent="#accordion" href="#productOptions" aria-expanded="true" aria-controls="productOptions">
@@ -102,15 +102,15 @@
                         <div id="productOptions" class="panel-collapse collapse" role="tabpanel">
                             <div class="panel-body">
                                 <div class="form-group">
-                                    <div class="control-label-container">
-                                        <label>Caption</label>
-                                        <label>(89/100)</label>
+                                    <div class="Option__label--container">
+                                        <label class="Option__label">Caption</label>
+                                        <label class="Option__label">(89/100)</label>
                                     </div>
                                     <textarea rows="4" class="form-control"></textarea>
                                 </div>
 
                                 <div class="form-group">
-                                    <label class="option--title">Book Size</label>
+                                    <label class="Option__label">Book Size</label>
                                     <div class="form-inline">
                                         <div class="radio">
                                             <label>
@@ -140,7 +140,7 @@
                                 </div>
 
                                 <div class="form-group">
-                                    <label class="option--title">Paper Weight</label>
+                                    <label class="Option__label">Paper Weight</label>
                                     <div class="form-inline">
                                         <div class="radio">
                                             <label>
@@ -172,7 +172,7 @@
                         </div>
                     </div>
 
-                    <div class="panel Option">
+                    <div class="panel Option Option--choose-photos">
                         <div class="panel-heading" role="tab">
                             <h4 class="panel-title">
                                 <a role="button" data-toggle="collapse" data-parent="#accordion" href="#choosePhotos" aria-expanded="true" aria-controls="choosePhotos">
@@ -201,21 +201,23 @@
                                 </div>
 
                                 <div class="Row">
-                                    <div class="Column Column--with-border Column-12">
+                                    <div class="Column Column--with-border Column--no-active-state Column--no-radius Column-12">
                                         <h5 class="Upload__text">Upload your own photos or design</h5>
                                         <button class="btn btn-lg btn-primary browse-photo">Browse Photo</button>
-                                        <p class="Upload__note"><small>Only images files (JPG, PNG) with max. 12MB</small></p>
+                                        <p class="Upload__note">
+                                            <small>Only images files (JPG, PNG) with max. 12MB</small>
+                                        </p>
                                     </div>
                                 </div>
 
                                 <div class="Row">
-                                    <div class="Column Column--with-border Column-4"></div>
-                                    <div class="Column Column--with-border Column-4"></div>
-                                    <div class="Column Column--with-border Column-4"></div>
-                                    <div class="Column Column--with-border Column-4"></div>
-                                    <div class="Column Column--with-border Column-4"></div>
-                                    <div class="Column Column--with-border Column-4"></div>
-                                    <div class="Column Column--with-border Column-4"></div>
+                                    <div class="Column Column--with-border Column--no-radius Column-4"></div>
+                                    <div class="Column Column--with-border Column--no-radius Column-4"></div>
+                                    <div class="Column Column--with-border Column--no-radius Column-4"></div>
+                                    <div class="Column Column--with-border Column--no-radius Column-4"></div>
+                                    <div class="Column Column--with-border Column--no-radius Column-4"></div>
+                                    <div class="Column Column--with-border Column--no-radius Column-4"></div>
+                                    <div class="Column Column--with-border Column--no-radius Column-4"></div>
                                     <div class="Column Column--with-border Column-4"></div>
                                     <div class="Column Column--with-border Column-4"></div>
                                     <div class="Column Column--with-border Column-4"></div>
@@ -226,7 +228,7 @@
                         </div>
                     </div>
                 </div>
-            </aside>
+            </div>
 
             <div class="Content">
                 <p>Content</p>
@@ -239,15 +241,15 @@
                         <i class="icon _icon-fish"></i>
                     </div>
 
-                    <div class="Row">
+                    <div class="Row Font__settings">
                         <div class="Column Column--without-border Column-8">
-                            <select class="form-control">
+                            <select class="form-control Pikto__input-text">
                                 <option value="Proxima Nova">Proxima Nova</option>
                                 <option value="Proxima Nova">Proxima Nova</option>
                             </select>
                         </div>
                         <div class="Column Column--without-border Column-4">
-                            <select class="form-control">
+                            <select class="form-control Pikto__input-text">
                                 <option value="500">500</option>
                                 <option value="500">300</option>
                             </select>
@@ -305,16 +307,22 @@
                             <input type="range" />
                         </div>
                         <div class="Column Column--without-border Column-4">
-                            <input type="text" size="3" value="90%" class="form-control" />
+                            <input type="text" size="3" value="90%" class="form-control Pikto__input-text" />
                         </div>
 
                         <div class="Column Column--without-border Column-4">
                             <p class="Setting__label">Blending</p>
                         </div>
                         <div class="Column Column--without-border Column-8">
-                            <select class="form-control">
+                            <select class="form-control Pikto__input-text">
                                 <option value="normal">Normal</option>
-                                <option value="normal">Normal</option>
+                                <option value="">Multiple</option>
+                                <option disabled>──────────</option>
+                                <option value="">Color Smooth</option>
+                                <option value="">Color Burn</option>
+                                <option disabled>──────────</option>
+                                <option value="">Color Screen</option>
+                                <option value="">Color Hue</option>
                             </select>
                         </div>
                     </div>
@@ -327,8 +335,12 @@
                     </div>
 
                     <div class="Row">
-                        <div class="Column Column--with-border Column-4"></div>
-                        <div class="Column Column--with-border Column-8"></div>
+                        <div class="Column Column--without-border Column-4">
+                            <p class="Setting__label">HEX #</p>
+                        </div>
+                        <div class="Column Column--without-border Column-8">
+                            <input type="color" value="#bf8fe1" class="form-control Pikto__input-text" />
+                        </div>
                     </div>
                 </div>
 
@@ -338,10 +350,16 @@
                         <i class="icon _icon-fish"></i>
                     </div>
 
-                    <div class="Row">
-                        <div class="Column Column--with-border Column-4"></div>
-                        <div class="Column Column--with-border Column-4"></div>
-                        <div class="Column Column--with-border Column-4"></div>
+                    <div class="Row CoverLayout">
+                        <div class="Column">
+                            <i class="icon icon-layout-artboard"></i>
+                        </div>
+                        <div class="Column">
+                            <i class="icon icon-layout-normal"></i>
+                        </div>
+                        <div class="Column">
+                            <i class="icon icon-layout-fullscreen"></i>
+                        </div>
                     </div>
                 </div>
             </div>
