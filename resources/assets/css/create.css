@@ -61,7 +61,7 @@ body {
 
 .Column--with-border {
   border-radius: 3px;
-  border: 1px solid #7f8fa4; }
+  border: 1px solid #313d4f; }
   .Column--with-border:hover {
     cursor: pointer;
     background: #162237; }
@@ -139,7 +139,21 @@ header {
   background: #273142; }
 
 #productSelection .Column {
+  background: #293345;
   padding: 20px 10px !important; }
+
+#productOptions label {
+  color: white;
+  font-size: 12px; }
+  #productOptions label.option--title {
+    color: #7f8fa4;
+    margin-bottom: 20px; }
+  #productOptions label input[type="radio"] {
+    margin-right: 7px; }
+
+#productOptions div.radio {
+  margin-right: 20px;
+  margin-bottom: 15px; }
 
 #choosePhotos .panel-body p {
   color: #7f8fa4;
@@ -147,7 +161,8 @@ header {
   margin-top: 5px; }
 
 #choosePhotos .Column {
-  padding: 10px; }
+  padding: 10px;
+  background: #293345; }
 
 #choosePhotos .Upload__text {
   color: #7f8fa4;
@@ -163,19 +178,6 @@ header {
 
 #choosePhotos .Upload__note {
   margin-top: 0; }
-
-#productOptions label {
-  color: white;
-  font-size: 12px; }
-  #productOptions label.option--title {
-    color: #7f8fa4;
-    margin-bottom: 20px; }
-  #productOptions label input[type="radio"] {
-    margin-right: 7px; }
-
-#productOptions div.radio {
-  margin-right: 20px;
-  margin-bottom: 15px; }
 
 .Settings {
   padding: 10px 15px; }
