@@ -59,3 +59,14 @@
     border-radius: 0;
     display: inline-block;
 }
+
+select.form-control {
+	color: white;
+	font-size: 14px;
+	background: $editorMenu;
+	border: 1px solid $borderColor;
+	&:focus {
+		box-shadow: none;
+		border: 1px solid $borderColor;
+	}
+}

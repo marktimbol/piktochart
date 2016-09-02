@@ -6956,7 +6956,8 @@ header {
 
 .Setting__label {
   color: white;
-  font-size: 14px; }
+  font-size: 14px;
+  margin-bottom: 0; }
 
 .Avatar {
   position: relative; }
@@ -7169,6 +7170,15 @@ header {
   box-shadow: none;
   border-radius: 0;
   display: inline-block; }
+
+select.form-control {
+  color: white;
+  font-size: 14px;
+  background: #273142;
+  border: 1px solid #313d4f; }
+  select.form-control:focus {
+    box-shadow: none;
+    border: 1px solid #313d4f; }
 
 /*# sourceMappingURL=create.css.map */
 

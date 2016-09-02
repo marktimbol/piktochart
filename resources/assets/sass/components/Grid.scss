@@ -24,7 +24,7 @@
 
 .Column--with-border {
     border-radius: 3px;
-    border: 1px solid #313d4f;    
+    border: 1px solid $borderColor;    
     &:hover {
         cursor: pointer;
         background: #162237;
