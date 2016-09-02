@@ -4,6 +4,12 @@
 	background: $editorMenu;
 }
 
+#productSelection {
+	.Column {
+		padding: 20px 10px !important;
+	}
+}
+
 #choosePhotos {
 	.panel-body {
 		p {

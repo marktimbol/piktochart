@@ -6801,9 +6801,7 @@ body {
 
 .Column {
   margin-bottom: 10px;
-  border-radius: 3px;
-  padding: 20px 10px;
-  border: 1px solid #7f8fa4;
+  padding: 12px 10px;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;
@@ -6812,9 +6810,26 @@ body {
   justify-content: center;
   -ms-flex-direction: column;
   flex-direction: column; }
-  .Column:hover {
+
+.Column--float-left {
+  -ms-flex-direction: row;
+  flex-direction: row; }
+  .Column--float-left .icon {
+    margin-right: 10px; }
+
+.Column--with-border {
+  border-radius: 3px;
+  border: 1px solid #7f8fa4; }
+  .Column--with-border:hover {
     cursor: pointer;
     background: #162237; }
+
+.Column--without-border {
+  border: 0;
+  padding: 0;
+  border-radius: 0;
+  -ms-flex-align: start;
+  align-items: flex-start; }
 
 .Column-2 {
   width: 14.67%; }
@@ -6881,6 +6896,9 @@ header {
   padding-top: 10px;
   background: #273142; }
 
+#productSelection .Column {
+  padding: 20px 10px !important; }
+
 #choosePhotos .panel-body p {
   color: #7f8fa4;
   font-size: 11px;
@@ -6933,6 +6951,10 @@ header {
   color: #7f8fa4;
   font-size: 12px;
   text-transform: uppercase; }
+
+.Setting__label {
+  color: white;
+  font-size: 14px; }
 
 .Avatar {
   position: relative; }
@@ -7038,6 +7060,61 @@ header {
   height: 26px;
   background-position: -344px -147px; }
 
+.icon-font-normal {
+  width: 12px;
+  height: 12px;
+  background-position: -90px -26px; }
+
+.icon-font-italic {
+  width: 11px;
+  height: 12px;
+  background-position: -90px -90px; }
+
+.icon-font-allcaps {
+  width: 22px;
+  height: 13px;
+  background-position: -85px -153px; }
+
+.icon-font-smallcaps {
+  width: 16px;
+  height: 12px;
+  background-position: -88px -218px; }
+
+.icon-font-underline {
+  width: 10px;
+  height: 12px;
+  background-position: -91px -282px; }
+
+.icon-font-strikethrough {
+  width: 12px;
+  height: 12px;
+  background-position: -90px -26px; }
+
+.icon-text-left {
+  background-position: -152px -23px;
+  width: 16px;
+  height: 18px; }
+
+.icon-text-center {
+  background-position: -152px -87px;
+  width: 16px;
+  height: 18px; }
+
+.icon-text-right {
+  background-position: -152px -151px;
+  width: 16px;
+  height: 18px; }
+
+.icon-text-justify {
+  background-position: -152px -215px;
+  width: 16px;
+  height: 18px; }
+
+.icon-text-leading {
+  width: 22px;
+  height: 16px;
+  background-position: -153px -281px; }
+
 .panel-group .panel {
   border-radius: 0;
   background: none;
@@ -7079,6 +7156,17 @@ header {
   .control-label-container label {
     color: #7f8fa4 !important;
     font-size: 11px; }
+
+.leading-value {
+  padding: 0;
+  color: white;
+  border: none;
+  height: 100%;
+  font-size: 14px;
+  background: none;
+  box-shadow: none;
+  border-radius: 0;
+  display: inline-block; }
 
 /*# sourceMappingURL=create.css.map */
 

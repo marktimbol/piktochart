@@ -236,4 +236,59 @@ header {
   height: 26px;
   background-position: -344px -147px; }
 
+.icon-font-normal {
+  width: 12px;
+  height: 12px;
+  background-position: -90px -26px; }
+
+.icon-font-italic {
+  width: 11px;
+  height: 12px;
+  background-position: -90px -90px; }
+
+.icon-font-allcaps {
+  width: 22px;
+  height: 13px;
+  background-position: -85px -153px; }
+
+.icon-font-smallcaps {
+  width: 16px;
+  height: 12px;
+  background-position: -88px -218px; }
+
+.icon-font-underline {
+  width: 10px;
+  height: 12px;
+  background-position: -91px -282px; }
+
+.icon-font-strikethrough {
+  width: 12px;
+  height: 12px;
+  background-position: -90px -26px; }
+
+.icon-text-left {
+  background-position: -152px -23px;
+  width: 16px;
+  height: 18px; }
+
+.icon-text-center {
+  background-position: -152px -87px;
+  width: 16px;
+  height: 18px; }
+
+.icon-text-right {
+  background-position: -152px -151px;
+  width: 16px;
+  height: 18px; }
+
+.icon-text-justify {
+  background-position: -152px -215px;
+  width: 16px;
+  height: 18px; }
+
+.icon-text-leading {
+  width: 22px;
+  height: 16px;
+  background-position: -153px -281px; }
+
 /*# sourceMappingURL=app.css.map */
