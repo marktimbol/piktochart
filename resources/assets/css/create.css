@@ -78,11 +78,15 @@ header {
     margin-right: 10px; }
 
 .Account--container {
-  position: relative; }
+  position: relative;
+  right: 22px; }
+  .Account--container:hover .Account__nav--dropdown {
+    display: block !important; }
 
 .Account__nav--dropdown {
-  right: 0;
-  position: absolute; }
+  right: -22px;
+  position: absolute;
+  display: none; }
 
 .Account__nav {
   width: 250px;
