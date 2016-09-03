@@ -22,12 +22,20 @@ elixir(function(mix) {
     	.scripts([
             bowersPath + 'jquery/dist/jquery.js',
             bowersPath + 'bootstrap/dist/js/bootstrap.js',
-            // 'app.js',
     	], 'public/js/app.js');
 
     mix.sass('create.scss', 'resources/assets/css/create.css')
         .styles([
             bowersPath + 'bootstrap/dist/css/bootstrap.css',
             'create.css',
-        ], 'public/css/create.css');
+        ], 'public/css/create.css')
+
+        .styles([
+            bowersPath + 'ruler.js/app/css/ruler.css'
+        ], 'public/css/ruler.css')
+
+        .scripts([
+            bowersPath + 'ruler.js/app/js/ruler.js',
+            'ruler.js'
+        ], 'public/js/ruler.js');        
 });
