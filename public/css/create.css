@@ -6835,9 +6835,85 @@ header {
   .Project__name .icon {
     margin-right: 10px; }
 
-.Avatar {
+.Account--container {
   position: relative; }
-  .Avatar .bubble {
+
+.Account__nav--dropdown {
+  right: 0;
+  position: absolute; }
+
+.Account__nav {
+  width: 250px;
+  border-radius: 4px;
+  margin-top: 35px;
+  background: white;
+  position: relative;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.76); }
+  .Account__nav::before {
+    content: ' ';
+    width: 20px;
+    height: 20px;
+    top: -8px;
+    right: 30px;
+    background: #2f87e4;
+    position: absolute;
+    transform: rotate(45deg); }
+
+.Account__header {
+  padding: 20px;
+  background: #2f87e4; }
+
+.Account__header--info {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.Account__header--name {
+  color: white;
+  font-size: 16px;
+  margin-bottom: 0; }
+
+.Account__header--email a {
+  color: #a1ceff;
+  font-size: 12px; }
+
+.Account__header--button {
+  margin-bottom: 0; }
+
+.Account__content .list-group-item .badge {
+  border-radius: 2px;
+  background: #007cff; }
+
+.Account__content .list-group-item label {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center; }
+  .Account__content .list-group-item label .icon {
+    margin-right: 10px; }
+
+.Account__action {
+  text-align: center;
+  background: #e4eaf1; }
+  .Account__action a {
+    color: #878787;
+    font-size: 14px;
+    padding: 10px;
+    display: block;
+    letter-spacing: 1px;
+    text-transform: uppercase; }
+    .Account__action a:hover {
+      background: #c5d0da;
+      text-decoration: none; }
+
+.Account__avatar {
+  position: relative; }
+  .Account__avatar .bubble {
     color: white;
     width: 15px;
     height: 15px;
@@ -6852,7 +6928,7 @@ header {
     align-items: center;
     -ms-flex-pack: center;
     justify-content: center; }
-  .Avatar .bubble--orange {
+  .Account__avatar .bubble--orange {
     background: #ff7800; }
 
 .Options .Column {
@@ -7197,6 +7273,26 @@ header {
   height: 60px;
   background-position: -258px -130px; }
 
+.icon-notification {
+  background-position: -218px -26px;
+  width: 12px;
+  height: 12px; }
+
+.icon-upgrade-plan {
+  background-position: -218px -91px;
+  width: 12px;
+  height: 10px; }
+
+.icon-tutorial {
+  background-position: -220px -154px;
+  width: 9px;
+  height: 12px; }
+
+.icon-help {
+  background-position: -218px -219px;
+  width: 12px;
+  height: 12px; }
+
 .panel-group .panel {
   border-radius: 0;
   background: none;
@@ -7222,6 +7318,18 @@ header {
   padding: 10px 15px;
   border: 0 !important; }
 
+.Account__nav .list-group {
+  border: none;
+  margin-bottom: 0; }
+  .Account__nav .list-group .list-group-item {
+    color: #747474;
+    font-size: 14px;
+    font-weight: bold;
+    border: none; }
+    .Account__nav .list-group .list-group-item:hover {
+      color: #171717;
+      background: none; }
+
 .leading-value {
   padding: 0;
   color: white;
@@ -7245,6 +7353,17 @@ select.form-control:focus {
   .Pikto__input-text:hover, .Pikto__input-text:active, .Pikto__input-text:focus {
     box-shadow: none;
     border: 1px solid #313d4f; }
+
+.btn-setting {
+  color: #a1ceff;
+  font-size: 12px;
+  background: none;
+  padding: 5px 20px;
+  border: 1px solid #a1ceff; }
+  .btn-setting:hover, .btn-setting:active, .btn-setting:focus {
+    color: #a1ceff !important;
+    background-color: #2871be !important;
+    border: 1px solid #a1ceff !important; }
 
 /*# sourceMappingURL=create.css.map */
 

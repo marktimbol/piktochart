@@ -34,6 +34,23 @@
 	}
 }
 
+.Account__nav {
+	.list-group {
+		border: none;
+		margin-bottom: 0;
+		.list-group-item {
+			color: #747474;
+			font-size: 14px;
+			font-weight: bold;
+			border: none;
+			&:hover {
+				color: #171717;
+				background: none;
+			}
+		}
+	}
+}
+
 .leading-value {
     padding: 0;
     color: white;
@@ -47,10 +64,6 @@
 }
 
 select.form-control {
-	// color: white;
-	// font-size: 14px;
-	// background: $editorMenu;
-	// border: 1px solid $borderColor;
 	&:focus {
 		box-shadow: none;
 		border: 1px solid $borderColor;
@@ -66,4 +79,17 @@ select.form-control {
     	box-shadow: none;
     	border: 1px solid $borderColor;
     }
+}
+
+.btn-setting {
+    color: #a1ceff;
+    font-size: 12px;
+    background: none;
+    padding: 5px 20px;
+	border: 1px solid #a1ceff;
+	&:hover, &:active, &:focus {
+		color: #a1ceff !important;
+		background-color: #2871be !important;
+		border: 1px solid #a1ceff !important;
+	}
 }

@@ -7065,6 +7065,26 @@ header {
   height: 60px;
   background-position: -258px -130px; }
 
+.icon-notification {
+  background-position: -218px -26px;
+  width: 12px;
+  height: 12px; }
+
+.icon-upgrade-plan {
+  background-position: -218px -91px;
+  width: 12px;
+  height: 10px; }
+
+.icon-tutorial {
+  background-position: -220px -154px;
+  width: 9px;
+  height: 12px; }
+
+.icon-help {
+  background-position: -218px -219px;
+  width: 12px;
+  height: 12px; }
+
 /*# sourceMappingURL=app.css.map */
 
 /*# sourceMappingURL=app.css.map */
