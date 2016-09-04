@@ -237,6 +237,9 @@ header {
   color: #7f8fa4;
   font-size: 12px; }
 
+.Option--choose-photos .Column-4 {
+  height: 62px; }
+
 .Option--choose-photos .Column {
   padding: 10px; }
   .Option--choose-photos .Column p {
@@ -637,6 +640,88 @@ select.form-control:focus {
     color: #a1ceff !important;
     background-color: #2871be !important;
     border: 1px solid #a1ceff !important; }
+
+/**  
+* https://css-tricks.com/styling-cross-browser-compatible-range-inputs-css/
+**/
+input[type=range] {
+  -webkit-appearance: none;
+  width: 100%; }
+
+input[type=range]:focus {
+  outline: none; }
+
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 1px;
+  cursor: pointer;
+  animate: 0.2s;
+  background: #1a91eb;
+  border-radius: 1.3px; }
+
+input[type=range]::-webkit-slider-thumb {
+  height: 12px;
+  width: 12px;
+  border-radius: 6px;
+  background: #273142;
+  border: 2px solid white;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -6px; }
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #367ebd; }
+
+input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  animate: 0.2s;
+  background: #3071a9;
+  border-radius: 1.3px;
+  border: 0.2px solid #010101; }
+
+input[type=range]::-moz-range-thumb {
+  border: 1px solid #000000;
+  height: 36px;
+  width: 16px;
+  border-radius: 3px;
+  background: #ffffff;
+  cursor: pointer; }
+
+input[type=range]::-ms-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  animate: 0.2s;
+  background: transparent;
+  border-color: transparent;
+  border-width: 16px 0;
+  color: transparent; }
+
+input[type=range]::-ms-fill-lower {
+  background: #2a6495;
+  border: 0.2px solid #010101;
+  border-radius: 2.6px; }
+
+input[type=range]::-ms-fill-upper {
+  background: #3071a9;
+  border: 0.2px solid #010101;
+  border-radius: 2.6px; }
+
+input[type=range]::-ms-thumb {
+  border: 1px solid #000000;
+  height: 36px;
+  width: 16px;
+  border-radius: 3px;
+  background: #ffffff;
+  cursor: pointer; }
+
+input[type=range]:focus::-ms-fill-lower {
+  background: #3071a9; }
+
+input[type=range]:focus::-ms-fill-upper {
+  background: #367ebd; }
 
 .ruler {
   background: #202939;
