@@ -327,4 +327,40 @@ header {
   width: 12px;
   height: 12px; }
 
+@media screen and (max-width: 320px) {
+  .Cards {
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .Card {
+    width: 280px;
+    margin-bottom: 20px; }
+  .Card__action--button {
+    padding: 13px 0px; }
+  .Container {
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .Account--container {
+    right: 8px; } }
+
+@media screen and (max-width: 414px) {
+  .Cards {
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .Card {
+    width: 280px;
+    margin-bottom: 20px; }
+  .Card__action--button {
+    padding: 13px 0px; }
+  .Container {
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .Account--container {
+    right: 8px; } }
+
+@media screen and (max-width: 768px) {
+  .Option--product-selection .Column p {
+    font-size: 11px; }
+  .Option--choose-photos .Column-4 {
+    height: 70px; } }
+
 /*# sourceMappingURL=app.css.map */

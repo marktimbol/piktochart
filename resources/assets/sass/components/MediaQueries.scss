@@ -1,11 +1,50 @@
-@media screen and (max-width: 320px) {
+@mixin mobile() {
+	.Cards {
+		flex-direction: column;
+	}
+	
+	.Card {
+		width: 280px;
+		margin-bottom: 20px;
+	}
 
+	.Card__action--button {
+		padding: 13px 0px;
+	}
+
+	.Container {
+		flex-direction: column;
+	}
+
+	.Account--container {
+		right: 8px;
+	}
+}
+
+@mixin ipad() {
+	.Option--product-selection {
+		.Column {
+			p {
+				font-size: 11px;
+			}
+		}
+	}
+	
+	.Option--choose-photos {
+		.Column-4 {
+			height: 70px;
+		}
+	}
+}
+
+@media screen and (max-width: 320px) {
+	@include mobile();
 }
 
 @media screen and (max-width: 414px) {	// iPhone6 Plus
-
+	@include mobile();
 }
 
 @media screen and (max-width: 768px) {
-
+	@include ipad();
 }

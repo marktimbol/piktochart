@@ -50,6 +50,7 @@ header {
 .Account__nav--dropdown {
 	width: 250px;
 	right: -22px;
+	z-index: 9999;
 	padding-top: 35px;
 	position: absolute;
 	display: none;
