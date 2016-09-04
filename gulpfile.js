@@ -30,12 +30,8 @@ elixir(function(mix) {
             'create.css',
         ], 'public/css/create.css')
 
-        .styles([
-            bowersPath + 'ruler.js/app/css/ruler.css'
-        ], 'public/css/ruler.css')
-
         .scripts([
-            bowersPath + 'ruler.js/app/js/ruler.js',
-            'ruler.js'
-        ], 'public/js/ruler.js');        
+            'ruler.js',
+            'create.js'
+        ], 'public/js/create.js');
 });

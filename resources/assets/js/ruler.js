@@ -13,8 +13,8 @@
 		var defaults = {
 			vRuleSize: 18,
 			hRuleSize: 18,
-			showCrosshair : true,
-			showMousePos: true
+			showCrosshair : false,
+			showMousePos: false
 		};//defaults
 		var settings = $.extend({},defaults,options);
 		
@@ -28,11 +28,11 @@
 		if (!Modernizr.touch) {
 			// Mouse crosshair
 			if (settings.showCrosshair) {
-				$('body').append(vMouse, hMouse);
+				$('.Ruler').append(vMouse, hMouse);
 			}
 			// Mouse position
 			if (settings.showMousePos) {
-				$('body').append(mousePosBox);
+				$('.Ruler').append(mousePosBox);
 			}
 			// If either, then track mouse position
 			if (settings.showCrosshair || settings.showMousePos) {
@@ -161,4 +161,3 @@
 		
 	};//ruler
 })( jQuery );
-//# sourceMappingURL=ruler.js.map

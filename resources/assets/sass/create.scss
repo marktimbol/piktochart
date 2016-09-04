@@ -25,8 +25,29 @@ h1, h2, h3, h4, h5, h6 {
 .Content {
 	flex: 0.60;
 	height: 1000px;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
+.Content__box {
+	flex: 1;
+	width: 85%;
+	border: 1px solid #979797;
+	margin: 40px 40px 20px 59px;
+}
+
+.Content__zoom {
+    font-size: 11px;
+    border-radius: 12px;
+	background: #273142;
+	label {
+		color: white;
+	    margin-bottom: 0;
+	    padding: 5px 15px;
+	}
+}
 .Settings {
 	flex: 0.2;
 	background: $editorMenu;
@@ -40,3 +61,4 @@ h1, h2, h3, h4, h5, h6 {
 @import 'components/Icons';
 @import 'components/Overwrite';
 @import 'components/MediaQueries';
+@import 'components/Ruler';

@@ -10,6 +10,7 @@
         <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700"> -->
         <link href="/public/css/create.css" rel="stylesheet">
         <link href="/public/css/ruler.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
     </head>
     <body>
         <header>
@@ -285,7 +286,14 @@
             </div>
 
             <div class="Content">
-                <div id="ruler"></div>
+                <div class="Ruler"></div>
+                <div class="Content__box">
+
+                </div>
+
+                <p class="Content__zoom">
+                    <label><span>+</span> 50% <span>-</span></label>
+                </p>
             </div>
 
             <div class="Settings">
@@ -420,6 +428,6 @@
         </div>
 
         <script src="/public/js/app.js"></script>
-        <script src="/public/js/ruler.js"></script>
+        <script src="/public/js/create.js"></script>
     </body>
 </html>
